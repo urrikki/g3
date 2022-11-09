@@ -90,7 +90,7 @@ def minigameRecursive(compteur=0):
         minigameRecursive(compteur)
 #FIN
 
-#DEBUTt
+#DEBUT
 #demande la lettre a trouver
 #enlever le hashtag en dessous pour jouer
 #recherche = str(input("qu'elle est ta lettre :"))
@@ -110,7 +110,51 @@ def maxigame(compteur=0):
         maxigame(compteur)
 
 #FIN
-minigameRecursive()
 
 
-#FIN
+#Exercice 1
+#Faire une fonction qui concatene 2 chaine de caractere, les separant par une virgule
+def concatene(chaineA,chaineB):
+    return f"{chaineA},{chaineB}"
+
+#Excercice 2 
+#Faire une fonction qui itere sur tous les index d'un tableau renvoyant une chaine de caractere 
+#avec l'ensembles des occurences d'un chiffre e.g.:
+#Pour tableau = [0,1,1,1,0,1,1,0,1]
+#la fonction(tableau,0) doit renvoyer "0,4,7" n'hesitez pas a implementer la premiere fonction;
+tableau=[0,0,0,0,0,3,2,3,5,4,8,5,0,1,4]
+def fc(tab,number):
+    L=[]
+    compteur=0
+    for i in tab:
+        if i==number:
+            L.append(compteur)
+        compteur+=1
+        
+    return L
+#Definir la fonction findIndex qui itere sur tableau, cherchant l'index
+#des differentes occurences de x
+    #definir i un index de départ
+    #definir chaineRetour telle qu'une chaine de caractere vide
+    #tant qui i est different du nombre d'elt dans le tableau
+        #Alors j'attribue a une variable la valeur de tableau a l'index i
+        #j'incremente i de 1
+        #Si selected est egal à x 
+            #Alors j'assigne le retour de concatWithComma tel que : concatWithComma(chaineRetour, i) à chaineReour
+#Definir mon index
+def wc(tab,number):
+    i=0
+    L=[]
+    while i != len(tab):
+        selected = tab[i]
+        if selected == number:
+            L.append(i)
+        i=i+1
+    return L
+        
+
+
+#Exercice 3 
+#Renvoyez / Afficher un message
+
+

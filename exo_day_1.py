@@ -1,4 +1,5 @@
 #DEBUT
+import random
 
 def FirstExo ():
     x=int(input("Que vaux x ? :"))
@@ -21,7 +22,7 @@ def info(salaireannee):
     seconde = salaireannee/31536000
     return str(mois) +" par mois " + str(semaine) + " par semaine " + str(jour) + " par jour " + str(heure)  + " par heure " + str(minute) + " par minute " + str(seconde) +" par seconde "
 
-print(info(50000))
+
 #FIN
 
 #definir une def minijeu
@@ -33,3 +34,4 @@ def minigame():
         caractereGagnant = str(input("Ce n'est pas ca essaye à nouveau :"))
     #annoncer la victoire
     print("felicitation la lettre gagnante etais le "+str(caractereGagnant))
+
